@@ -1,0 +1,16 @@
+services:
+  app:
+    build: .
+    container_name: mevzuat_ai_app
+    ports:
+      - "8008:8008"
+    env_file:
+      - .env
+    restart: unless-stopped
+    networks:
+      - mevzuat_net
+
+
+networks:
+  mevzuat_net:
+    driver: bridge
