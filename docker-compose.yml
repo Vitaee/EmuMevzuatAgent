@@ -3,7 +3,7 @@ services:
     build: .
     container_name: mevzuat_ai_app
     ports:
-      - "8008:8008"
+      - "8003:8003"
     env_file:
       - .env
     restart: unless-stopped
